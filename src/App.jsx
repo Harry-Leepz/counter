@@ -1,5 +1,11 @@
+import Card from "./components/Card";
+
 function App() {
-  return <p>Fancy Counter!</p>;
+  return (
+    <main>
+      <Card />
+    </main>
+  );
 }
 
 export default App;
