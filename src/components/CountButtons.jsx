@@ -1,7 +1,7 @@
 const CountButtons = () => {
   return (
-    <div>
-      <button>-</button>
+    <div className='button-container'>
+      <button className='count-btn'>-</button>
       <button>+</button>
     </div>
   );
