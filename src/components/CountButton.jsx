@@ -9,7 +9,10 @@ const CountButton = ({ setCount, type }) => {
         if (newCount < 0) return 0;
         return newCount;
       } else {
-        return prevCount + 1;
+        // Ensure count never goes above 5
+        const newCount = prevCount + 1;
+        if (newCount > 5) return 5;
+        return newCount;
       }
     });
   };
